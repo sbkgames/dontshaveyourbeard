@@ -71,7 +71,7 @@ game.HUD.ScoreItem = me.Renderable.extend({
      */
     draw : function (context) {
 		//this.bgimage.draw(context, this.pos.x, this.pos.y);
-        this.font.draw (context, "You earned " + this.income + " cash", this.pos.x, this.pos.y);
+        this.font.draw (context, "You earned " + this.income + " £", this.pos.x, this.pos.y);
     }
 
 });
