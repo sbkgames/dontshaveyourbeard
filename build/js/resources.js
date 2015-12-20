@@ -50,11 +50,6 @@ game.resources = [
         "src": "data/img/gui/invcapt.png"
     },
     {
-        "name": "scissors",
-        "type": "image",
-        "src": "data/img/gui/scissors.png"
-    },
-    {
         "name": "title_screen",
         "type": "image",
         "src": "data/img/gui/title_screen.png"
