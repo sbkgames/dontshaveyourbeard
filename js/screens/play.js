@@ -8,7 +8,7 @@ game.PlayScreen = me.ScreenObject.extend({
 		me.levelDirector.loadLevel("area05");
         // reset the score
         game.data.score = 0;
-		me.audio.playTrack("AquaVitae");
+		me.audio.playTrack("AquaVitae.mp3");
         // add our HUD to the game world
         this.HUD = new game.HUD.Container();
         me.game.world.addChild(this.HUD);
