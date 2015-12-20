@@ -1,0 +1,54 @@
+
+/**
+ * a basic HUD item to display score
+ */
+ /*
+game.HUD.MessageItem = me.Renderable.extend({
+    /**
+     * constructor
+     */
+	 /*
+	 init: function(x, y) {
+
+        // call the parent constructor
+        // (size does not matter here)
+        this._super(me.Renderable, 'init', [x, y, 20, 20]);
+		//var bgimage = new Image("txtbg");
+		this.font= new me.Font("Arial", "24px", "black", "left");
+		//this.font.set("right");
+        // local copy of the global score
+        //this.score = -1;
+		this.time = me.timer.getTime();
+		this.income = 0;
+		var txtbg = new me.Sprite(0,0, {image: me.loader.getImage('txtbg')
+                });
+		me.game.world.addChild(txtbg,
+            1
+        );
+		txtbg.isRenderable = true;
+		txtbg.floating = true;
+		
+    },
+
+    /**
+     * update function
+     /*
+    update : function () {
+        // we don't do anything fancy here, so just
+        // return true if the score has been updated
+        /*if (this.time + 4000 < me.timer.getTime()) {
+            this.time = me.timer.getTime();
+			this.income += 1;
+			game.score = this.income;
+            return true;
+        }*//*
+        return false;
+    },
+
+    /**
+     * draw the text
+     *//*
+    draw : function (context) {
+        this.font.draw (context, game.message, this.pos.x, this.pos.y);
+    }
+});*/
