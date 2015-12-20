@@ -71,7 +71,8 @@ game.HUD.ScoreItem = me.Renderable.extend({
      */
     draw : function (context) {
 		//this.bgimage.draw(context, this.pos.x, this.pos.y);
-        this.font.draw (context, String.concat("You earned ",this.income, " £"), this.pos.x, this.pos.y);
+		var txtstring = String.concat("You earned ",this.income, " £");
+        this.font.draw (context, txtstring, this.pos.x, this.pos.y);
     }
 
 });
