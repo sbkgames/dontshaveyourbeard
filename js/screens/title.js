@@ -25,7 +25,7 @@ game.TitleScreen = me.ScreenObject.extend({
             },
              
             draw : function (renderer) {
-				this.font.draw(renderer, "Press Enter to start\nwhy", 500, 600);
+				this.font.draw(renderer, "Press Enter to start\nwhy", 530, 600);
             },
             onDestroyEvent : function() {
                 //just in case
