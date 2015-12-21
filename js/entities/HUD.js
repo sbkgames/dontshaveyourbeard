@@ -122,58 +122,7 @@ game.HUD.MessageItem = me.Renderable.extend({
 			this.font.draw (context, game.message, this.pos.x, this.pos.y);		
 		}
 		else {
-			this.font.draw (context, "Press B to buy scissors, S to shave your beard", this.pos.x, this.pos.y);		
-		}
-    }
-});
-
-/**
- * a basic HUD item to display inventory items
- */
- 
-game.HUD.InvItem = me.Renderable.extend({
-    /**
-     * constructor
-     */
-	 
-	 init: function(x, y) {
-
-        // call the parent constructor
-        // (size does not matter here)
-        this._super(me.Renderable, 'init', [x, y, 20, 20]);
-		//var bgimage = new Image("txtbg");
-		this.font= new me.Font("Arial", "18px", "black", "left");
-		//this.font.set("right");
-        // local copy of the global score
-        //this.score = -1;
-		this.time = me.timer.getTime();
-		
-    },
-
-    /**
-     * update function
-     */
-    update : function () {
-        // we don't do anything fancy here, so just
-        // return true if the score has been updated
-        /*if (this.time + 4000 < me.timer.getTime()) {
-            this.time = me.timer.getTime();
-			this.income += 1;
-			game.score = this.income;
-            return true;
-        }*/
-        return true;
-    },
-
-    /**
-     * draw the text
-     */
-    draw : function (context) {
-		if (game.message != null){
-			this.font.draw (context, game.message, this.pos.x, this.pos.y);		
-		}
-		else {
-			this.font.draw (context, "Press B to buy scissors, S to shave your beard, move with arrow keys", this.pos.x, this.pos.y);		
+			this.font.draw (context, "Move with arrow keys. b: buy scissors, s: shave beard", this.pos.x, this.pos.y);		
 		}
     }
 });
