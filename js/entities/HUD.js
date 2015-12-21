@@ -173,7 +173,7 @@ game.HUD.InvItem = me.Renderable.extend({
 			this.font.draw (context, game.message, this.pos.x, this.pos.y);		
 		}
 		else {
-			this.font.draw (context, "Press B to buy scissors, S to shave your beard", this.pos.x, this.pos.y);		
+			this.font.draw (context, "Press B to buy scissors, S to shave your beard, move with arrow keys", this.pos.x, this.pos.y);		
 		}
     }
 });
