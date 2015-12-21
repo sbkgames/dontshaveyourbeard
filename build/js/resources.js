@@ -10,21 +10,6 @@ game.resources = [
         "src": "data/bgm/"
     },
     {
-        "name": "cling",
-        "type": "audio",
-        "src": "data/sfx/"
-    },
-    {
-        "name": "jump",
-        "type": "audio",
-        "src": "data/sfx/"
-    },
-    {
-        "name": "stomp",
-        "type": "audio",
-        "src": "data/sfx/"
-    },
-    {
         "name": "area01_bkg0",
         "type": "image",
         "src": "data/img/area01_bkg0.png"
