@@ -122,7 +122,7 @@ game.HUD.MessageItem = me.Renderable.extend({
 			this.font.draw (context, game.message, this.pos.x, this.pos.y);		
 		}
 		else {
-			this.font.draw (context, "Move with arrow keys. b: buy scissors, s: shave beard", this.pos.x, this.pos.y);		
+			this.font.draw (context, "arrow keys: move, b: buy scissors, s: shave beard", this.pos.x, this.pos.y);		
 		}
     }
 });
